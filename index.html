@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n Automation Academy - เปลี่ยนการยิงแอดธรรมดาให้เป็นระบบอัตโนมัติ</title>
+    <meta name="description" content="หลักสูตรเรียนลัดสอนการใช้งาน n8n Workflow Automation สำหรับมือใหม่และนักการตลาด เรียนรู้การทำ Ads Automation บน Facebook, TikTok และการสร้าง AI RAG Chatbot เชื่อมต่อกับ Line">
+    
+    <!-- Google Fonts: Outfit & Kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="main-nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">🔗</span>
+                <span class="logo-text">n8n<span>Academy</span></span>
+            </a>
+            <div class="nav-toggle" id="nav-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu-list">
+                <li><a href="#hero" class="nav-link active">หน้าแรก</a></li>
+                <li><a href="#pain-points" class="nav-link">ทำไมต้อง n8n</a></li>
+                <li><a href="#modules" class="nav-link">หลักสูตร</a></li>
+                <li><a href="#formats" class="nav-link">รูปแบบการเรียน</a></li>
+                <li><a href="#contact" class="nav-btn">จองเรียนเลย</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">🚀 NEW GENERATION OF MARKETING</div>
+                <h1 class="hero-title">
+                    ยิงแอดเหนื่อยไหม?<br>
+                    เปลี่ยนให้เป็น <span class="gradient-text">Automation 24 ชม.</span> ด้วย n8n
+                </h1>
+                <p class="hero-subtitle">
+                    หลักสูตรสอนการใช้งาน n8n สำหรับมือใหม่และนักการตลาด เรียนลัดวิธีเชื่อมต่อ TikTok, Facebook Ads และการทำ AI RAG Chatbot ผ่าน Line แบบจับมือทำ ช่วยประหยัดเวลาและลดต้นทุนค่าโฆษณา
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="primary-btn" id="hero-cta-booking">จองสิทธิ์เรียนตัวต่อตัว</a>
+                    <a href="#modules" class="secondary-btn" id="hero-cta-modules">ดูหลักสูตรทั้งหมด</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Video Mockup Frame with n8n Looping Visualization -->
+                <div class="video-mockup-container">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span class="dot-red"></span>
+                            <span class="dot-yellow"></span>
+                            <span class="dot-green"></span>
+                        </div>
+                        <div class="mockup-title">n8n Live Workflow Run</div>
+                    </div>
+                    <div class="mockup-body">
+                        <img src="n8n_workflow_demo.png" alt="n8n Automation Run" class="mockup-img">
+                        <div class="video-overlay-scan"></div>
+                        <div class="play-badge">● LIVE DEMO LOOP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="pain-points-section" id="pain-points">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">ยุคนี้แค่ยิงแอดเก่งยังไม่พอ ระบบหลังบ้านต้องอัจฉริยะด้วย</h2>
+                <p class="section-desc">เปรียบเทียบการจัดการข้อมูลแอดก่อนและหลังนำระบบ n8n Automation เข้ามาใช้งาน</p>
+            </div>
+            <div class="comparison-grid">
+                <div class="comparison-card card-before">
+                    <div class="card-badge badge-red">แบบเดิม (Manual)</div>
+                    <ul class="comparison-list">
+                        <li>
+                            <span class="list-icon">❌</span>
+                            <div class="list-text">
+                                <strong>ตอบแชทช้า:</strong> พลาดโอกาสปิดการขายเมื่อมีทราฟฟิกเข้ามาพร้อมกันเยอะๆ
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">❌</span>
+                            <div class="list-text">
+                                <strong>ย้ายข้อมูลมือเป็นระวิง:</strong> ต้องคอยโหลดไฟล์ Lead Form จาก Facebook Ads เข้า Google Sheets เองทุกวัน
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">❌</span>
+                            <div class="list-text">
+                                <strong>ไม่มีรายงานเรียลไทม์:</strong> ต้องรอสิ้นเดือนเพื่อคำนวณต้นทุนต่อการขาย (ROAS)
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">❌</span>
+                            <div class="list-text">
+                                <strong>แชทบอททื่อ:</strong> ตอบคำถามลูกค้าจำเจ ตอบลึกหรือใช้ข้อมูลบริษัทคุยไม่ได้
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-card card-after">
+                    <div class="card-badge badge-green">มีระบบ n8n Automation</div>
+                    <ul class="comparison-list">
+                        <li>
+                            <span class="list-icon">✅</span>
+                            <div class="list-text">
+                                <strong>เชื่อมต่อไร้รอยต่อ:</strong> ข้อมูลโฆษณา TikTok/FB ไหลเข้า Google Sheet หรือ CRM ทันทีที่มีคนกรอกฟอร์ม
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">✅</span>
+                            <div class="list-text">
+                                <strong>แจ้งเตือนทันใจ:</strong> แจ้งเตือนยอดขายหรือ Lead ใหม่ผ่าน Line Notify / Telegram ทันทีแบบเรียลไทม์
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">✅</span>
+                            <div class="list-text">
+                                <strong>วิเคราะห์ยอดขายอัตโนมัติ:</strong> คำนวณความคุ้มค่าแอดแบบนาทีต่อนาที ส่งสรุปรายงานประจำวันอัตโนมัติ
+                            </div>
+                        </li>
+                        <li>
+                            <span class="list-icon">✅</span>
+                            <div class="list-text">
+                                <strong>AI Chatbot (RAG):</strong> บอทฉลาดขึ้น ดึงข้อมูลสินค้าของบริษัทมาตอบลูกค้าทาง Line ได้เหมือนแอดมินจริง
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Modules Section -->
+    <section class="modules-section" id="modules">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">เจาะลึก 4 หลักสูตรหลักเพื่อการทำโฆษณา TikTok & Automation</h2>
+                <p class="section-desc">หลักสูตรสำหรับนักยิงแอดและนายหน้ายุคใหม่ เน้นเชื่อมต่อระบบอัตโนมัติเพื่อปั๊มยอดขายโดยไม่ต้องเขียนโค้ด</p>
+            </div>
+            
+            <div class="modules-grid">
+                <!-- Module 1 -->
+                <div class="module-card card-blue">
+                    <div class="module-number">01</div>
+                    <div class="module-icon">🛡️</div>
+                    <h3 class="module-title">n8n Essentials for TikTok Marketing</h3>
+                    <p class="module-desc">ปูพื้นฐานการทำ Automation ตั้งแต่ศูนย์สำหรับนักการตลาด TikTok เรียนรู้วิธีการทำงานของ Webhook, API และวิธีติดตั้งระบบ n8n เพื่อเตรียมเชื่อมต่อกับแพลตฟอร์มโฆษณาและระบบหลังบ้าน</p>
+                    <ul class="module-features">
+                        <li>ปูพื้นฐานแนวคิด Node-based Workflow และการตั้งค่า n8n</li>
+                        <li>การเชื่อมโยงข้อมูล n8n เข้ากับ Google Sheets และ Airtable</li>
+                        <li>การดึงข้อมูลและรับส่ง webhook จาก TikTok Ads Manager</li>
+                        <li>การจัดการข้อมูลผู้ติดต่อและการจัดเก็บข้อมูลลูกค้าเพื่อทำรีเป้าหมาย</li>
+                    </ul>
+                    <div class="workflow-gallery">
+                        <div class="wf-img-container"><img src="wf_trigger.png" alt="TikTok Ad Webhook Trigger"></div>
+                        <div class="wf-img-container"><img src="wf_ai.png" alt="Process Lead Info"></div>
+                        <div class="wf-img-container"><img src="wf_output.png" alt="Save to Google Sheet"></div>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-card featured-card card-pink">
+                    <div class="card-ribbon">POPULAR</div>
+                    <div class="module-number">02</div>
+                    <div class="module-icon">🎬</div>
+                    <h3 class="module-title">TikTok Video Automation & AI Script</h3>
+                    <p class="module-desc">ปฏิวัติการทำคอนเทนต์นายหน้าและโฆษณาด้วย AI สอนใช้ n8n ร่วมกับ Generative AI (เช่น ChatGPT/Claude) เพื่อเขียนสคริปต์สไตล์ TikTok และผลิตคลิปวิดีโอรีวิวสินค้าจำนวนมากในเวลาอันสั้น</p>
+                    <ul class="module-features">
+                        <li>การเขียน Prompt สร้างสคริปต์วิดีโอนายหน้าที่ดึงดูดสายตา (Hook & Story)</li>
+                        <li>การรันเวิร์กโฟลว์ n8n สั่ง AI เจนเสียงพากย์และสร้างซับไตเติลภาษาไทย</li>
+                        <li>เทคนิคตัดต่อ Bulk Video และการปักตะกร้าให้ยอดขายพุ่งแรง</li>
+                        <li>ระบบคัดเลือกคีย์เวิร์ดยอดนิยมบน TikTok Shop มาทำคลิปอัตโนมัติ</li>
+                    </ul>
+                    <div class="workflow-gallery">
+                        <div class="wf-img-container"><img src="wf_trigger.png" alt="Select High-Demand Product"></div>
+                        <div class="wf-img-container"><img src="wf_ai.png" alt="AI Generated Review Script"></div>
+                        <div class="wf-img-container"><img src="wf_output.png" alt="Bulk CapCut Auto Editing"></div>
+                    </div>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module-card card-green">
+                    <div class="module-number">03</div>
+                    <div class="module-icon">📈</div>
+                    <h3 class="module-title">TikTok Ads Automation & ROAS Analytics</h3>
+                    <p class="module-desc">เปลี่ยนการยิงแอดธรรมดาให้ฉลาดขึ้นด้วยระบบอัตโนมัติ จัดการแคมเปญโฆษณา TikTok ชี้เป้าหาลูกค้าที่กรอกฟอร์ม และสรุปผลตอบแทนจากค่าโฆษณา (ROAS) แบบเรียลไทม์</p>
+                    <ul class="module-features">
+                        <li>ดึงข้อมูล Lead Form จาก TikTok Ads วิ่งเข้าระบบ CRM และชีตทันที</li>
+                        <li>ตั้งเงื่อนไขปรับงบโฆษณาอัตโนมัติตามประสิทธิภาพแคมเปญ</li>
+                        <li>คำนวณและสรุปยอดขายเทียบค่าโฆษณา (ROAS) ส่ง Line กลุ่มทุกเช้า</li>
+                        <li>การแก้ไขปัญหาการติด Pixel และส่งข้อมูล Event ไปยัง TikTok API</li>
+                    </ul>
+                    <div class="workflow-gallery">
+                        <div class="wf-img-container"><img src="wf_trigger.png" alt="Lead Form Trigger"></div>
+                        <div class="wf-img-container"><img src="wf_ai.png" alt="Auto Campaign Adjuster"></div>
+                        <div class="wf-img-container"><img src="wf_output.png" alt="Send Line Summary Report"></div>
+                    </div>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module-card card-orange">
+                    <div class="module-number">04</div>
+                    <div class="module-icon">🤖</div>
+                    <h3 class="module-title">TikTok Shop Affiliate & LINE Retargeting Chatbot</h3>
+                    <p class="module-desc">เพิ่มพลังแชทบอท LINE ด้วยความรู้เรื่อง RAG (Retrieval-Augmented Generation) เชื่อมข้อมูลระบบขายจาก TikTok Shop ตอบแชท และส่งบรอดแคสต์หาลูกค้าตามช่วงเวลาเพื่อกระตุ้นการซื้อซ้ำ</p>
+                    <ul class="module-features">
+                        <li>เชื่อมโยงข้อมูลนายหน้าและระบบคำนวณค่าคอมมิชชัน TikTok Shop</li>
+                        <li>สร้าง LINE Chatbot เชื่อมโมเดล AI เพื่อคุยตอบรายละเอียดสินค้า</li>
+                        <li>ระบบ RAG ค้นหาข้อมูลสต็อกสินค้า โปรโมชัน และการจัดส่งมาตอบลูกค้า</li>
+                        <li>ระบบติดตามและบรอดแคสต์หาลูกค้าเพื่อทำตลาดรีทาร์เก็ตส่วนตัว</li>
+                    </ul>
+                    <div class="workflow-gallery">
+                        <div class="wf-img-container"><img src="wf_trigger.png" alt="Customer LINE Message"></div>
+                        <div class="wf-img-container"><img src="wf_ai.png" alt="RAG Product Database Search"></div>
+                        <div class="wf-img-container"><img src="wf_output.png" alt="Send Smart reply to customer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- TikTok Ads Showcase Section -->
+    <section class="showcase-section" id="showcase">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">ตัวอย่างโฆษณากระตุ้นยอดขายบน TikTok</h2>
+                <p class="section-desc">ตัวอย่างงานโฆษณาแนวตั้งแบบ 9:16 ที่ใช้ในงานนายหน้าและรีวิวสินค้าเพื่อดึงดูดใจและปักตะกร้า</p>
+            </div>
+            
+            <!-- Carousel container -->
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carousel-track-list">
+                    <!-- Ad 1 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_gadget.png" alt="Smart Home Gadget Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">🔥 ยอดฮิต</span>
+                                    <h4>รีวิว: ลำโพงอัจฉริยะ</h4>
+                                    <p>ปักตะกร้าแล้ววันนี้! ด่วนลด 30%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ad 2 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_skincare.png" alt="Skincare Glow Serum Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">✨ ขายดี</span>
+                                    <h4>รีวิว: เซรั่มหน้าใส Aura Glow</h4>
+                                    <p>ผิวใสออร่าใน 7 วัน ของแท้ปักตะกร้าเลย</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ad 3 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_food.png" alt="Gourmet Burger Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">🍔 แนะนำ</span>
+                                    <h4>รีวิว: ชีสเบอร์เกอร์พรีเมียม</h4>
+                                    <p>ชุ่มฉ่ำเต็มคำ ส่งตรงถึงบ้านคุณ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ad 4 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_gadget.png" alt="Smart Automation Hub Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">⚡ เทคโนโลยี</span>
+                                    <h4>ระบบบ้านอัจฉริยะ n8n</h4>
+                                    <p>ตั้งค่าสวิตช์อัตโนมัติ สบายสุดๆ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ad 5 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_skincare.png" alt="Organic Cream Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">🍃 ออร์แกนิก</span>
+                                    <h4>ครีมบำรุงออร์แกนิก</h4>
+                                    <p>ปลอดภัยไร้สารเคมี รีวิวจากผู้ใช้จริง</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ad 6 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_food.png" alt="Crispy Fries Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">🍟 ทานเล่น</span>
+                                    <h4>มันฝรั่งทอดกรอบสูตรพิเศษ</h4>
+                                    <p>กรอบอร่อย เคี้ยวเพลินจนหยุดไม่ได้</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ad 7 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_gadget.png" alt="Smart Watch Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">⌚ กีฬา</span>
+                                    <h4>นาฬิกาออกกำลังกายอัจฉริยะ</h4>
+                                    <p>วัดชีพจร ระยะทาง ครบจบในเครื่องเดียว</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ad 8 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_skincare.png" alt="Sunscreen Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">☀️ กันแดด</span>
+                                    <h4>ครีมกันแดดเนื้อบางเบา SPF50</h4>
+                                    <p>คุมมัน กันเหงื่อ ไม่เยิ้มระหว่างวัน</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ad 9 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_food.png" alt="Korean Fried Chicken Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">🍗 ฮิตในโซเชียล</span>
+                                    <h4>ไก่ทอดซอสเกาหลีเผ็ดร้อน</h4>
+                                    <p>กรอบนอก นุ่มใน ซอสฉ่ำๆ สไตล์เกาหลี</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ad 10 -->
+                    <div class="carousel-item">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="tiktok_ad_gadget.png" alt="Robot Vacuum Ad">
+                                <div class="ad-overlay">
+                                    <span class="ad-tag">🧹 งานบ้าน</span>
+                                    <h4>หุ่นยนต์ดูดฝุ่นอัจฉริยะ</h4>
+                                    <p>กวาด ถู ครบในเครื่องเดียว สั่งงานผ่านแอป</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button class="carousel-control-btn btn-prev" id="carousel-prev-btn">❮</button>
+                <button class="carousel-control-btn btn-next" id="carousel-next-btn">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Formats Section -->
+    <section class="formats-section" id="formats">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">รูปแบบการเรียนรู้ที่เลือกได้ตามความต้องการ</h2>
+                <p class="section-desc">ไม่ว่าคุณจะสะดวกเรียนที่ไหน เรามีโซลูชันที่เหมาะสมที่สุดสำหรับคุณและทีมงาน</p>
+            </div>
+            
+            <div class="formats-container">
+                <div class="format-card">
+                    <div class="format-badge">ONLINE LIVE</div>
+                    <h3 class="format-title">อบรมออนไลน์ผ่าน Live Zoom</h3>
+                    <p class="format-description">เรียนสดพร้อมกัน ซักถามปัญหาได้ทันที เหมาะสำหรับผู้เรียนที่ต้องการความยืดหยุ่นทางเวลา พร้อมรับลิงก์บันทึกวิดีโอย้อนหลังเพื่อทบทวนบทเรียนได้ตลอดชีพ</p>
+                    <div class="format-price">
+                        <span class="price-original" style="text-decoration: line-through; color: var(--text-gray); font-size: 1.25rem; margin-right: 10px; font-family: 'Outfit', sans-serif;">3,900.-</span>
+                        <span class="price-amount" style="color: #ff4b72;">1,990.-</span>
+                        <span class="price-unit">/ ท่าน (Earlybird)</span>
+                    </div>
+                    <a href="#contact" class="format-btn" id="btn-format-online">สนใจเรียนออนไลน์</a>
+                </div>
+                
+                <div class="format-card premium-format">
+                    <div class="format-badge premium-badge">SPECIAL CLASS</div>
+                    <h3 class="format-title">Face-to-Face (เรียนเดี่ยวจับมือทำ)</h3>
+                    <p class="format-description">หลักสูตรเร่งรัดจับมือทำ 2 วันเต็ม สอนแบบส่วนตัวตัวต่อตัว เจาะลึกระบบโฆษณา TikTok ของคุณโดยเฉพาะ นัดสอนในโซนจังหวัดลำพูน และจังหวัดเชียงใหม่ (สถานที่ตามร้านกาแฟแล้วแต่ความสะดวกของลูกค้ากำหนดได้เลย)</p>
+                    <div class="format-price">
+                        <span class="price-original" style="text-decoration: line-through; color: var(--text-gray); font-size: 1.25rem; margin-right: 10px; font-family: 'Outfit', sans-serif;">9,900.-</span>
+                        <span class="price-amount">3,990.-</span>
+                        <span class="price-unit">/ 1-2 ท่าน (Earlybird)</span>
+                    </div>
+                    <a href="#contact" class="format-btn premium-btn" id="btn-format-face">สนใจเรียนตัวต่อตัว</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h2 class="contact-title">ปรึกษาคุณ Joe ฟรี!</h2>
+                    <p class="contact-subtitle">หากยังไม่แน่ใจว่าระบบของธุรกิจเหมาะกับแบบไหน ทักมาพูดคุยรายละเอียดเบื้องต้นก่อนได้เลยครับ ยินดีให้คำแนะนำ</p>
+                    
+                    <div class="contact-channels">
+                        <a href="https://line.me/ti/p/~noppasit99" target="_blank" class="channel-card line-channel" id="contact-line-btn">
+                            <span class="channel-icon">💬</span>
+                            <div class="channel-details">
+                                <span class="channel-label">LINE ID (คลิกเพื่อแอดไลน์)</span>
+                                <span class="channel-value">noppasit99</span>
+                            </div>
+                            
+                            <!-- Hover Tooltip QR Code -->
+                            <div class="qr-tooltip">
+                                <img src="line_qr.jpg" alt="Line QR Code" class="qr-tooltip-img">
+                                <span class="qr-tooltip-text">สแกนเพื่อแอดไลน์สอบถาม</span>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:noppasit99@gmail.com" class="channel-card email-channel" id="contact-email-btn">
+                            <span class="channel-icon">✉️</span>
+                            <div class="channel-details">
+                                <span class="channel-label">EMAIL ADDRESS</span>
+                                <span class="channel-value">noppasit99@gmail.com</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="booking-form">
+                        <div class="form-group">
+                            <label for="user-name">ชื่อของคุณ / ชื่อธุรกิจ</label>
+                            <input type="text" id="user-name" name="name" placeholder="ระบุชื่อจริงหรือชื่อบริษัท" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="user-email">อีเมล</label>
+                                <input type="email" id="user-email" name="email" placeholder="email@domain.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="user-line">Line ID (เพื่อให้ติดต่อกลับ)</label>
+                                <input type="text" id="user-line" name="lineId" placeholder="ระบุ Line ID" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="course-select">คอร์สที่สนใจเรียน</label>
+                            <select id="course-select" name="course" required>
+                                <option value="" disabled selected>กรุณาเลือกคอร์ส</option>
+                                <option value="tiktok-n8n-basics">Module 1: n8n for TikTok Marketing (Earlybird 1,990.-)</option>
+                                <option value="tiktok-video-auto">Module 2: TikTok Video Automation (Earlybird 1,990.-)</option>
+                                <option value="tiktok-ads-auto">Module 3: TikTok Ads Automation & ROAS (Earlybird 1,990.-)</option>
+                                <option value="tiktok-shop-affiliate">Module 4: TikTok Shop Affiliate & LINE Bot (Earlybird 1,990.-)</option>
+                                <option value="face-to-face">Face-to-Face (นัดสอนตัวต่อตัว 2 วัน เชียงใหม่/ลำพูน - Earlybird 3,990.-)</option>
+                                <option value="consulting">ขอคำแนะนำแพ็กเกจพิเศษองค์กร</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-message">เป้าหมายระบบอัตโนมัติที่อยากนำไปใช้</label>
+                            <textarea id="user-message" name="message" rows="4" placeholder="เช่น อยากให้ส่งรีพอร์ตโฆษณา TikTok เข้า Line ทุกสิ้นวัน หรือทำแชทบอทตอบคำถามลูกค้า"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" id="form-submit-btn">ส่งข้อมูลและจองเรียน</button>
+                    </form>
+                    
+                    <!-- Form Toast Alert -->
+                    <div class="toast-message" id="form-toast">
+                        <span class="toast-icon">✨</span>
+                        <div class="toast-text">
+                            <strong>ส่งข้อมูลเรียบร้อย!</strong> คุณ Joe จะรีบติดต่อกลับโดยเร็วที่สุดครับ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-icon">🔗</span>
+                    <span class="logo-text">n8n<span>Academy</span></span>
+                </a>
+                <p class="footer-about">เราสอนเทคโนโลยีระบบอัตโนมัติเพื่อช่วยให้ธุรกิจและนักการตลาดไทยเติบโตอย่างมั่นคงโดยไม่ต้องมีต้นทุนบุคลากรขนาดใหญ่</p>
+            </div>
+            <div class="footer-links">
+                <h4>เมนู</h4>
+                <ul>
+                    <li><a href="#hero">หน้าแรก</a></li>
+                    <li><a href="#pain-points">ทำไมต้อง n8n</a></li>
+                    <li><a href="#modules">หลักสูตร</a></li>
+                    <li><a href="#formats">รูปแบบการเรียน</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h4>ผู้เชี่ยวชาญ & ผู้สอน</h4>
+                <p><strong>คุณ Joe นพสิทธิ์</strong></p>
+                <p>Line ID: noppasit99</p>
+                <p>Email: noppasit99@gmail.com</p>
+                <p>Website: <a href="http://ayaigaldie.online" class="domain-link">ayaigaldie.online</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 n8n Automation Academy - ayaigaldie.online. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
