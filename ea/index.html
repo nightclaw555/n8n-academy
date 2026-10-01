@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สร้าง EA MT5 ด้วยพลัง AI - หลักสูตรตัวต่อตัว รับประกันได้ EA พร้อมเทรดจริง | ayaigaldie.site</title>
+    <meta name="description" content="คอร์สเรียนตัวต่อตัว (Private 1-on-1) เชียงใหม่ ลำพูน กรุงเทพฯ สอนเปลี่ยนระบบเทรดของคุณเป็น EA บน MT5 ด้วยพลัง AI โดยไม่ต้องเขียนโค้ดเอง จบคอร์สได้ EA พร้อมรันเทรดทันที">
+    
+    <!-- Google Fonts: Kanit & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Glowing Backgrounds (30% Green Accent) -->
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="ambient-glow-3"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-badge">MT5 AI</span>
+                <span class="logo-text">EA<span>Mastery</span></span>
+            </a>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">หน้าแรก</a></li>
+                <li><a href="#guarantee" class="nav-link">การันตีผลงาน</a></li>
+                <li><a href="#comparison" class="nav-link">ทำไมต้องสร้างเอง</a></li>
+                <li><a href="#modules" class="nav-link">เนื้อหาหลักสูตร</a></li>
+                <li><a href="#locations" class="nav-link">พื้นที่เรียน (1-on-1)</a></li>
+                <li><a href="/" class="nav-link" style="opacity: 0.75;">🌐 n8n Academy</a></li>
+                <li><a href="#booking" class="nav-btn">จองคิวประเมินระบบฟรี</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    PRIVATE 1-ON-1 MENTORING • เชียงใหม่ | ลำพูน | กรุงเทพฯ
+                </div>
+                <h1 class="hero-title">
+                    เปลี่ยนไอเดียเทรดของคุณ<br>
+                    เป็น <span class="gradient-text">EA อัตโนมัติใน 1 วัน</span><br>
+                    ด้วยพลัง AI
+                </h1>
+                <p class="hero-subtitle">
+                    สอนจับมือทำตัวต่อตัว จากศูนย์ ไม่จำเป็นต้องมีพื้นฐานโปรแกรมเมอร์ ใช้ AI ยุคใหม่ถอดตรรกะระบบเทรดของคุณ เป็น Expert Advisor (EA) รันบน MT5 ตลอด 24/5 อย่างมีวินัย
+                </p>
+                <div class="hero-actions">
+                    <a href="#booking" class="primary-btn">
+                        <span>จองรอบเรียนตัวต่อตัว</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#modules" class="secondary-btn">ดูเนื้อหา 6 โมดูล</a>
+                </div>
+
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">✓</div>
+                        <span>จบคอร์สได้ EA พร้อมเทรดจริง 100%</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">✓</div>
+                        <span>มีระบบ Risk & Trailing Stop ในตัว</span>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">✓</div>
+                        <span>ไม่ต้องเปิดเผยระบบให้คนนอก</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terminal Mockup Window -->
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="window-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="terminal-title">MT5 Strategy Tester &bull; AI Code Compiler</div>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="code-line c-dim">// 1. Prompt AI to generate MT5 Expert Advisor</span>
+                        <span class="code-line"><span class="c-green">#include</span> <span class="c-yellow">&lt;Trade\Trade.mqh&gt;</span></span>
+                        <span class="code-line"><span class="c-blue">input double</span> InpRiskPercent = <span class="c-green">1.5</span>;</span>
+                        <span class="code-line"><span class="c-blue">input int</span>    InpTrailingPoints = <span class="c-green">150</span>;</span>
+                        <span class="code-line c-dim">// 2. Dynamic Entry Conditions Verified</span>
+                        <span class="code-line"><span class="c-blue">void</span> <span class="c-yellow">OnTick</span>() {</span>
+                        <span class="code-line">&nbsp;&nbsp;<span class="c-blue">if</span>(CheckEntrySignal() && !IsMaxDrawdownReached()) {</span>
+                        <span class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;ExecuteOrderWithTrailingStop();</span>
+                        <span class="code-line">&nbsp;&nbsp;}</span>
+                        <span class="code-line">}</span>
+                        
+                        <div class="terminal-result-card">
+                            <div class="result-row">
+                                <span class="c-dim">Compilation Status:</span>
+                                <span class="result-tag">● 0 Errors / 0 Warnings</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="c-dim">Backtest Quality:</span>
+                                <span class="c-white">99.9% Real Tick Data</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="c-dim">Max Drawdown Control:</span>
+                                <span class="c-green">&lt; 7.8% (Risk Protected)</span>
+                            </div>
+                            <div class="result-row">
+                                <span class="c-dim">Output File:</span>
+                                <span class="c-yellow">MyStrategy_AI_v1.ex5 (Ready to Trade)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section" id="guarantee">
+        <div class="guarantee-container">
+            <div class="guarantee-card">
+                <div class="guarantee-icon">🎯</div>
+                <div class="guarantee-text">
+                    <h3>พันธสัญญาการันตีผลลัพธ์ (Outcome Guarantee)</h3>
+                    <p>
+                        <strong>"จบคอร์ส ลูกค้าจะต้องได้รับไฟล์ EA (.mq5 / .ex5) ตามระบบเทรดของตัวเองที่สำเร็จและพร้อมเทรดจริงทันที"</strong><br>
+                        เราไม่ปล่อยให้คุณกลับบ้านไปกับทฤษฎี แต่จะนั่งประกบสร้างโค้ด Backtest และตั้งค่า Risk Management ร่วมกันจนได้ระบบที่สมบูรณ์ 100%
+                    </p>
+                </div>
+                <div class="guarantee-badge">READY-TO-TRADE GUARANTEE</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section" id="comparison">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">ADVANTAGES</span>
+                <h2 class="section-title">ทำไมต้องสร้าง EA ด้วย AI ดีกว่าเทรดมือและจ้างเขียน?</h2>
+                <p class="section-desc">เปรียบเทียบความแตกต่างชัดเจนระหว่างการทำงานแบบเดิม กับการมีทักษะสร้าง EA เป็นของตัวเอง</p>
+            </div>
+
+            <div class="comparison-grid">
+                <!-- Card Before -->
+                <div class="comp-card card-before">
+                    <span class="card-badge badge-red">แบบเดิม: เทรดมือ / จ้างเขียน</span>
+                    <ul class="comp-list">
+                        <li>
+                            <span class="comp-icon">❌</span>
+                            <div class="comp-text">
+                                <strong>เฝ้าจอตลอดเวลา:</strong>
+                                <span>เสียสุขภาพจิต กังวลทุกครั้งที่กราฟเหวี่ยง และมักพลาดออเดอร์สำคัญในยามดึก</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="comp-icon">❌</span>
+                            <div class="comp-text">
+                                <strong>อารมณ์พาพอร์ตพัง:</strong>
+                                <span>ขยับ SL หนี, Overtrade, Revenge Trade เมื่อเกิดการขาดทุนต่อเนื่อง</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="comp-icon">❌</span>
+                            <div class="comp-text">
+                                <strong>จ้างเขียนแพง & เสี่ยงระบบรั่วไหล:</strong>
+                                <span>ค่าจ้างหลายหมื่น โดนดองงาน แก้งานยาก และโปรแกรมเมอร์รู้ตรรกะระบบเทรดของคุณทั้งหมด</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="comp-icon">❌</span>
+                            <div class="comp-text">
+                                <strong>ตลาดเปลี่ยน แต่แก้ระบบไม่ได้:</strong>
+                                <span>เมื่อสภาวะตลาดเปลี่ยน โค้ดเดิมใช้ไม่ได้ ต้องเสียเงินจ้างแก้งานใหม่ซ้ำซาก</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card After -->
+                <div class="comp-card card-after">
+                    <span class="card-badge badge-green">มีทักษะสร้าง EA ด้วย AI (ตัวต่อตัว)</span>
+                    <ul class="comp-list">
+                        <li>
+                            <span class="comp-icon">✅</span>
+                            <div class="comp-text">
+                                <strong>เทรดอัตโนมัติ 24/5 แบบไร้อารมณ์:</strong>
+                                <span>รันบน Cloud VPS ทำงานตามแผน 100% เปิด-ปิดออเดอร์ตรงจุด ไม่มีความลังเล</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="comp-icon">✅</span>
+                            <div class="comp-text">
+                                <strong>มีระบบ Money Management ควบคุมความเสี่ยง:</strong>
+                                <span>คำนวณ Lot อัตโนมัติตาม Balance, Trailing Stop ล็อกกำไร, และตัดขาดทุนตามกฎเหล็ก</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="comp-icon">✅</span>
+                            <div class="comp-text">
+                                <strong>เป็นเจ้าของ Source Code 100%:</strong>
+                                <span>ปลอดภัย ไม่ต้องส่งระบบให้ใครดู เก็บตรรกะเทรดเป็นความลับของตัวเองตลอดไป</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="comp-icon">✅</span>
+                            <div class="comp-text">
+                                <strong>ปรับเปลี่ยน ปรับปรุง ได้ตลอดชีวิต:</strong>
+                                <span>มีไอเดียใหม่เมื่อไหร่ สั่ง AI สร้างและทดสอบ Backtest ได้เองภายใน 15 นาที</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section class="modules-section" id="modules">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">CURRICULUM</span>
+                <h2 class="section-title">6 โมดูลเข้มข้น จากไอเดีย สู่ EA รันเทรดจริง</h2>
+                <p class="section-desc">ออกแบบสำหรับเทรดเดอร์โดยเฉพาะ เน้นจับมือทำ ไม่เน้นทฤษฎีโค้ดที่น่าปวดหัว</p>
+            </div>
+
+            <div class="modules-grid">
+                <!-- Module 1 -->
+                <div class="module-card">
+                    <span class="module-num">MODULE 01</span>
+                    <h3 class="module-title">สถาปัตยกรรม MQL5 & Prompt สำหรับเทรดเดอร์</h3>
+                    <p class="module-desc">ทำความเข้าใจวงจรชีวิตของ EA บน MT5 (OnInit, OnTick, OnDeinit) และเทคนิคการ Prompt สั่ง AI เขียน MQL5 ให้ถูกต้องตั้งแต่รอบแรก</p>
+                    <ul class="module-features">
+                        <li><span>•</span> ติดตั้ง MetaEditor & AI Prompt Environment</li>
+                        <li><span>•</span> กฎเหล็ก 5 ข้อในการสั่ง AI เจนโค้ด MQL5 ไม่ให้ติดบั๊ก</li>
+                    </ul>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-card">
+                    <span class="module-num">MODULE 02</span>
+                    <h3 class="module-title">แปลงตรรกะระบบเทรด สู่ Computer Logic</h3>
+                    <p class="module-desc">แปลงระบบเทรดของคุณ ไม่ว่าจะเป็น EMA, RSI, MACD, SMC, Order Block, Grid, Martingale หรือ Breakout ให้กลายเป็นเงื่อนไขที่ AI เขียนได้แม่นยำ</p>
+                    <ul class="module-features">
+                        <li><span>•</span> โครงสร้าง Prompt Template สำหรับ Indicator & Price Action</li>
+                        <li><span>•</span> การผสานสัญญาณกรอง Timeframe หลายระดับ (Multi-TF)</li>
+                    </ul>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="module-card">
+                    <span class="module-num">MODULE 03</span>
+                    <h3 class="module-title">Money Management & ระบบกันพอร์ตแตก</h3>
+                    <p class="module-desc">หัวใจสำคัญของความอยู่รอด: ใส่ระบบจัดการความเสี่ยงแบบสถาบัน คำนวณ Lot size ตาม % Risk, ระบบ Trailing Stop, Break-Even และ Max Daily Loss Guard</p>
+                    <ul class="module-features">
+                        <li><span>•</span> Auto Lot Size Calculation ตามทุนในพอร์ต</li>
+                        <li><span>•</span> ระบบหยุดการเทรดอัตโนมัติเมื่อ Drawdown ถึงเกณฑ์</li>
+                    </ul>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="module-card">
+                    <span class="module-num">MODULE 04</span>
+                    <h3 class="module-title">AI Debugging Mastery (แก้ Error ใน 1 นาที)</h3>
+                    <p class="module-desc">ไม่ต้องกลัวติด Error อีกต่อไป! เรียนรู้วิธีอ่าน Error และ Warning บน MetaEditor Journal แล้วป้อนกลับให้ AI แก้ไขปัญหาได้ตรงจุดทันที</p>
+                    <ul class="module-features">
+                        <li><span>•</span> เทคนิคอ่าน Error Log & Code Trace</li>
+                        <li><span>•</span> สูตร Prompt สั่ง AI Refactor โค้ดที่ติดค้าง</li>
+                    </ul>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="module-card">
+                    <span class="module-num">MODULE 05</span>
+                    <h3 class="module-title">Backtesting 99.9% & ป้องกัน Overfitting</h3>
+                    <p class="module-desc">ทดสอบระบบอย่างถูกวิธีบน MT5 Strategy Tester โหลดข้อมูล Real Tick Data คุณภาพสูงสุด และวิธีสังเกตระบบที่ไม่ Overfit (ไม่หลอกตาในอดีต)</p>
+                    <ul class="module-features">
+                        <li><span>•</span> การรัน Optimization หาพารามิเตอร์ที่ดีที่สุด</li>
+                        <li><span>•</span> Forward Walk Test เพื่อทดสอบกับสภาวะตลาดจริง</li>
+                    </ul>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="module-card">
+                    <span class="module-num">MODULE 06</span>
+                    <h3 class="module-title">Live Deployment, Cloud VPS & Line Alert</h3>
+                    <p class="module-desc">นำไฟล์ EA ไปติดตั้งรันบนบัญชีจริง ตั้งค่า Cloud VPS ไม่ให้ระบบดับ และเชื่อมต่อระบบแจ้งเตือนออเดอร์เข้า Line หรือ Telegram แบบเรียลไทม์</p>
+                    <ul class="module-features">
+                        <li><span>•</span> แนะนำและเซ็ตอัป VPS สำหรับรัน EA 24/5</li>
+                        <li><span>•</span> ติดตั้ง Webhook ส่งข้อความแจ้งเตือนเมื่อเปิด/ปิดไม้</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="locations-section" id="locations">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">LOCATIONS</span>
+                <h2 class="section-title">นัดเรียนตัวต่อตัว (Private 1-on-1)</h2>
+                <p class="section-desc">เน้นพื้นที่สะดวกของผู้เรียน นั่งประกบจับมือทำจนเสร็จสมบูรณ์</p>
+            </div>
+
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-icon">🌲</div>
+                    <h3 class="location-name">เชียงใหม่ (Chiang Mai)</h3>
+                    <p class="location-desc">นัดเจอตามโซนนิมมานเหมินท์, ในเมือง, เซ็นทรัลเฟสติวัล หรือ Co-working space ที่เงียบสงบพร้อมใช้งานอินเทอร์เน็ตความเร็วสูง</p>
+                    <span class="location-tag">เปิดรับนัดประจำทุกสัปดาห์</span>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">🏛️</div>
+                    <h3 class="location-name">ลำพูน (Lamphun)</h3>
+                    <p class="location-desc">โซนในเมืองลำพูน, โซนนิคมอุตสาหกรรม หรือสถานที่ที่ผู้เรียนสะดวก พร้อมนำโน้ตบุ๊กมานั่งประกบทำโค้ดได้ทันที</p>
+                    <span class="location-tag">เปิดรับนัดประจำทุกสัปดาห์</span>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-icon">🏙️</div>
+                    <h3 class="location-name">กรุงเทพฯ (Bangkok)</h3>
+                    <p class="location-desc">นัดเจอรอบพิเศษตามแนวรถไฟฟ้า BTS / MRT, ห้างสรรพสินค้าชั้นนำ หรือ Co-working space ในย่านธุรกิจ</p>
+                    <span class="location-tag">เปิดรับเป็นรอบรายเดือน (นัดล่วงหน้า)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section" id="booking">
+        <div class="section-container">
+            <div class="booking-card">
+                <div class="section-header" style="margin-bottom: 30px;">
+                    <span class="section-tag">GET STARTED</span>
+                    <h2 class="section-title" style="font-size: 2rem;">จองสิทธิ์ & ปรึกษาประเมินระบบเทรดฟรี</h2>
+                    <p class="section-desc">กรอกข้อมูลเบื้องต้น เพื่อให้เราช่วยประเมินความเป็นไปได้ในการทำ EA ก่อนนัดหมายวันเรียน</p>
+                </div>
+
+                <form id="consultation-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="full-name">ชื่อ - นามสกุล *</label>
+                            <input type="text" id="full-name" class="form-input" placeholder="เช่น คุณสมชาย มั่งคั่ง" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="phone">เบอร์โทรศัพท์ติดต่อ *</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="เช่น 081-234-5678" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="line-id">Line ID *</label>
+                            <input type="text" id="line-id" class="form-input" placeholder="เพื่อความสะดวกในการนัดหมาย" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="location-select">พื้นที่ที่สะดวกนัดเรียนตัวต่อตัว *</label>
+                            <select id="location-select" class="form-select" required>
+                                <option value="" disabled selected>-- เลือกพื้นที่ --</option>
+                                <option value="chiangmai">เชียงใหม่ (นิมมาน / ในเมือง)</option>
+                                <option value="lamphun">ลำพูน (ในเมือง / นิคมฯ)</option>
+                                <option value="bangkok">กรุงเทพมหานคร (แนวรถไฟฟ้า)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label class="form-label" for="trading-style">ตรรกะระบบเทรดที่คุณอยากทำเป็น EA *</label>
+                            <select id="trading-style" class="form-select" required>
+                                <option value="" disabled selected>-- เลือกรูปแบบระบบเทรดหลักของคุณ --</option>
+                                <option value="indicator">ใช้อินดิเคเตอร์ (EMA, RSI, MACD, Bollinger Bands ฯลฯ)</option>
+                                <option value="trend">Trend Following / Breakout (ตามเทรนด์ / ทะลุแนวรับแนวต้าน)</option>
+                                <option value="scalping">Scalping สั้น ทำกำไรเร็ว</option>
+                                <option value="grid">Grid / Hedging / Martingale แบบคุมความเสี่ยง</option>
+                                <option value="smc">Smart Money Concept (SMC) / ICT / Order Block</option>
+                                <option value="custom">มีระบบเฉพาะของตัวเอง (ระบุรายละเอียดด้านล่าง)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label class="form-label" for="details">รายละเอียดระบบเทรดคร่าวๆ หรือคำถามเพิ่มเติม</label>
+                            <textarea id="details" class="form-textarea" rows="3" placeholder="เช่น เทรดคู่ทอง XAUUSD ไทม์เฟรม M15 ใช้ EMA ตัดกัน และอยากมี Trailing Stop..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submit-btn">
+                        ส่งข้อมูลเพื่อจองคิวประเมินระบบเทรด
+                    </button>
+                    <p class="form-note">🔒 ข้อมูลและตรรกะระบบเทรดของคุณจะถูกเก็บเป็นความลับ 100%</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="nav-logo">
+                <span class="logo-badge">MT5 AI</span>
+                <span class="logo-text">EA<span>Mastery</span></span>
+            </div>
+            <p class="footer-copy">
+                &copy; 2026 ayaigaldie.site. สงวนลิขสิทธิ์ทุกประการ &bull; Private Algorithmic Trading Mentoring
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
