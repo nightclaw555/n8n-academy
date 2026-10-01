@@ -37,6 +37,7 @@
                 <li><a href="#hero" class="nav-link">หน้าแรก</a></li>
                 <li><a href="#guarantee" class="nav-link">การันตีผลงาน</a></li>
                 <li><a href="#comparison" class="nav-link">ทำไมต้องสร้างเอง</a></li>
+                <li><a href="#live-demo" class="nav-link" style="color: #00f59b; font-weight: 500;">⚡ ดู EA เทรดสด</a></li>
                 <li><a href="#modules" class="nav-link">เนื้อหาหลักสูตร</a></li>
                 <li><a href="#locations" class="nav-link">พื้นที่เรียน (1-on-1)</a></li>
                 <li><a href="/" class="nav-link" style="opacity: 0.75;">🌐 n8n Academy</a></li>
@@ -152,6 +153,16 @@
     <!-- Comparison Section -->
     <section class="comparison-section" id="comparison">
         <div class="section-container">
+            <!-- Lifestyle Vision Banner -->
+            <div class="lifestyle-banner">
+                <span class="lifestyle-badge">⚡ THE AUTOMATED TRADER LIFESTYLE</span>
+                <h2 class="lifestyle-title">ชีวิตเป็นของคุณ... ให้ภาระการเฝ้ากราฟและหาเงิน เป็นหน้าที่ของ AI Robot (EA)</h2>
+                <p class="lifestyle-desc">
+                    นั่งจิบกาแฟชมวิวภูเขา ใช้ชีวิตกับคนที่คุณรัก ออกไปเที่ยวหรือทำงานประจำได้อย่างสบายใจ<br>
+                    ในขณะที่ระบบเทรดอัจฉริยะของคุณ เฝ้าจับจังหวะและทำกำไรบน Cloud VPS ตลอด 24/5 ไร้ความกังวล
+                </p>
+            </div>
+
             <div class="section-header">
                 <span class="section-tag">ADVANTAGES</span>
                 <h2 class="section-title">ทำไมต้องสร้าง EA ด้วย AI ดีกว่าเทรดมือและจ้างเขียน?</h2>
@@ -227,6 +238,123 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Execution & Thrilling Video Demo Section -->
+    <section class="execution-demo-section" id="live-demo">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">LIVE DEMO &bull; REAL-TIME AUTO EXECUTION</span>
+                <h2 class="section-title">ดูการทำงานจริง: EA เปิด-ปิดออเดอร์อัตโนมัติ 24 ชม.</h2>
+                <p class="section-desc">เห็นภาพชัดเจนว่าเมื่อคุณมี EA ระบบจะสแกนสัญญาณ ยิงออเดอร์ ล็อกกำไร Trailing Stop และปิดทำกำไรเองอย่างไร</p>
+            </div>
+
+            <div class="cockpit-container">
+                <!-- Cockpit Header -->
+                <div class="cockpit-header">
+                    <div class="cockpit-pair">
+                        <span class="pair-badge">⚡ XAUUSD (GOLD)</span>
+                        <span class="pair-timeframe">M1 SCALPING &bull; MULTI-INDICATOR AI EA</span>
+                    </div>
+                    <div class="cockpit-telemetry">
+                        <div class="telemetry-item">
+                            <span>SERVER PING:</span>
+                            <span class="telemetry-val">1.2 ms (Cloud VPS)</span>
+                        </div>
+                        <div class="telemetry-item">
+                            <span>MODE:</span>
+                            <span class="telemetry-val" style="color: #00f59b;">● FULLY AUTOMATED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cockpit Main Display -->
+                <div class="cockpit-main">
+                    <!-- Dynamic Live Trading Canvas -->
+                    <div class="chart-stage">
+                        <canvas id="trading-canvas"></canvas>
+                        
+                        <!-- HUD Overlays -->
+                        <div class="chart-overlay-hud">
+                            <div class="hud-pill alert" id="live-action-hud">
+                                <span class="pulse-dot"></span>
+                                <span id="hud-status-text">EA ACTIVE: SCANNING M1 BREAKOUT...</span>
+                            </div>
+                            <div class="hud-pill">
+                                <span>TRAILING STOP:</span>
+                                <span style="color: #00f59b; font-weight: bold;" id="hud-trailing-text">+150 POINTS ACTIVE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Telemetry Sidebar -->
+                    <div class="sidebar-telemetry">
+                        <div class="metric-box highlight">
+                            <span class="metric-label">NET PROFIT (TODAY)</span>
+                            <div class="metric-number green" id="metric-profit">+$2,740.50</div>
+                        </div>
+
+                        <div class="metric-box">
+                            <span class="metric-label">WIN RATE</span>
+                            <div class="metric-number" style="color: #38bdf8;" id="metric-winrate">89.2%</div>
+                        </div>
+
+                        <div class="metric-box">
+                            <span class="metric-label">MAX DRAWDOWN GUARD</span>
+                            <div class="metric-number" style="color: #00f59b;">&lt; 5.4%</div>
+                        </div>
+
+                        <div>
+                            <div class="order-log-header">
+                                <span>LIVE AUTO-EXECUTION LOG</span>
+                                <span style="color: #00f59b;">● REAL-TIME</span>
+                            </div>
+                            <ul class="order-log-list" id="order-log-list">
+                                <li class="order-log-item">
+                                    <span>[14:28:10] BUY 1.00 XAUUSD @ 2652.40</span>
+                                    <span style="color: #00f59b;">EXECUTED</span>
+                                </li>
+                                <li class="order-log-item">
+                                    <span>[14:28:45] TRAILING STOP ADJUSTED</span>
+                                    <span style="color: #fbbf24;">+200 PTS</span>
+                                </li>
+                                <li class="order-log-item">
+                                    <span>[14:29:12] TARGET HIT @ 2655.80</span>
+                                    <span style="color: #00f59b; font-weight: bold;">+$340.00</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cockpit Controls Bar -->
+                <div class="cockpit-controls">
+                    <div class="controls-group">
+                        <button class="ctrl-btn play-btn" id="btn-toggle-sim">⏸ PAUSE DEMO</button>
+                        <button class="ctrl-btn active" id="btn-speed-1x">1X REALTIME</button>
+                        <button class="ctrl-btn" id="btn-speed-5x">5X FAST</button>
+                        <button class="ctrl-btn" id="btn-speed-10x">10X TURBO</button>
+                    </div>
+                    <div class="controls-group">
+                        <button class="ctrl-btn" id="btn-sound-toggle">🔊 SOUND: ON</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thrilling Trading Battle Station Poster -->
+            <div class="video-poster-box">
+                <img src="ea_trading_action.jpg" alt="Thrilling Automated EA Trading in Action">
+                <div class="poster-overlay">
+                    <div class="poster-info">
+                        <h4>⚡ ระบบเปิด-ปิดออเดอร์ความเร็วสูง ระดับมิลลิวินาที</h4>
+                        <p>AUTO-EXECUTION &bull; RISK MANAGEMENT &bull; TRAILING STOP &bull; 24/5 NO HUMAN EMOTION</p>
+                    </div>
+                    <a href="#booking" class="primary-btn" style="padding: 10px 20px; font-size: 0.95rem;">
+                        <span>จองเรียนสร้าง EA ตัวเองทันที</span>
+                    </a>
                 </div>
             </div>
         </div>

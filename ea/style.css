@@ -511,10 +511,62 @@ a {
     font-weight: 300;
 }
 
-/* Comparison Section */
+/* Comparison Section with Lifestyle Robot Background */
 .comparison-section {
-    padding: 70px 0;
+    padding: 100px 0 110px;
     position: relative;
+    background: linear-gradient(180deg, rgba(6, 9, 12, 0.92) 0%, rgba(6, 9, 12, 0.82) 40%, rgba(6, 9, 12, 0.94) 100%), 
+                url('smart_investor_lifestyle.jpg') center center / cover no-repeat;
+    background-attachment: scroll;
+    border-top: 1px solid rgba(0, 245, 155, 0.2);
+    border-bottom: 1px solid rgba(0, 245, 155, 0.2);
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .comparison-section {
+        background-attachment: fixed;
+    }
+}
+
+.lifestyle-banner {
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto 50px;
+    background: rgba(6, 9, 12, 0.75);
+    border: 1px solid var(--border-green);
+    border-radius: var(--radius-lg);
+    padding: 35px 30px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), var(--accent-glow);
+}
+
+.lifestyle-badge {
+    display: inline-block;
+    background: rgba(0, 245, 155, 0.15);
+    border: 1px solid var(--border-green);
+    color: var(--accent-green);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 5px 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.lifestyle-title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 12px;
+    line-height: 1.35;
+}
+
+.lifestyle-desc {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    font-weight: 300;
 }
 
 .comparison-grid {
@@ -528,6 +580,7 @@ a {
 .comp-card {
     border-radius: var(--radius-md);
     padding: 35px 30px;
+
     transition: var(--transition);
     position: relative;
     backdrop-filter: blur(10px);
@@ -590,9 +643,301 @@ a {
     margin-bottom: 2px;
 }
 
-.comp-text span {
+/* Live Execution & Video Demo Section */
+.execution-demo-section {
+    padding: 85px 0 95px;
+    background: radial-gradient(circle at center, rgba(0, 245, 155, 0.05) 0%, rgba(6, 9, 12, 1) 75%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cockpit-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(10, 16, 22, 0.95);
+    border: 1px solid var(--accent-green);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), var(--accent-glow-strong);
+}
+
+.cockpit-header {
+    background: rgba(6, 9, 12, 0.98);
+    border-bottom: 1px solid var(--border-green);
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cockpit-pair {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pair-badge {
+    background: rgba(0, 245, 155, 0.15);
+    color: var(--accent-green);
+    border: 1px solid var(--border-green);
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.pair-timeframe {
     color: var(--text-gray);
-    font-size: 0.88rem;
+    font-size: 0.85rem;
+    font-family: monospace;
+}
+
+.cockpit-telemetry {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+.telemetry-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-gray);
+}
+
+.telemetry-val {
+    color: var(--accent-green);
+    font-weight: 700;
+}
+
+.cockpit-main {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    background: #06090c;
+    min-height: 480px;
+    position: relative;
+}
+
+.chart-stage {
+    position: relative;
+    background: #06090c;
+    border-right: 1px solid var(--border-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#trading-canvas {
+    width: 100%;
+    height: 420px;
+    display: block;
+}
+
+.chart-overlay-hud {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    pointer-events: none;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hud-pill {
+    background: rgba(6, 9, 12, 0.85);
+    border: 1px solid var(--border-green);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    padding: 8px 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    font-family: monospace;
+    color: var(--text-light);
+}
+
+.hud-pill.alert {
+    border-color: #00f59b;
+    box-shadow: 0 0 15px rgba(0, 245, 155, 0.3);
+    animation: flashGlow 1.5s infinite alternate;
+}
+
+@keyframes flashGlow {
+    from { box-shadow: 0 0 5px rgba(0, 245, 155, 0.2); }
+    to { box-shadow: 0 0 20px rgba(0, 245, 155, 0.6); }
+}
+
+.sidebar-telemetry {
+    padding: 24px;
+    background: rgba(8, 12, 16, 0.98);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.metric-box {
+    background: rgba(14, 22, 28, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    transition: var(--transition);
+}
+
+.metric-box.highlight {
+    border-color: var(--border-green);
+    background: rgba(0, 245, 155, 0.04);
+}
+
+.metric-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.metric-number {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: var(--text-white);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1;
+}
+
+.metric-number.green {
+    color: var(--accent-green);
+    text-shadow: 0 0 15px rgba(0, 245, 155, 0.4);
+}
+
+.order-log-header {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-gray);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 6px;
+}
+
+.order-log-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 160px;
+    overflow-y: hidden;
+    font-family: monospace;
+    font-size: 0.76rem;
+}
+
+.order-log-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid var(--accent-green);
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cockpit-controls {
+    background: rgba(6, 9, 12, 0.98);
+    border-top: 1px solid var(--border-color);
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.controls-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ctrl-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-light);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.ctrl-btn:hover, .ctrl-btn.active {
+    background: rgba(0, 245, 155, 0.15);
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+}
+
+.ctrl-btn.play-btn {
+    background: var(--accent-gradient);
+    color: var(--bg-black);
+    font-weight: 700;
+    border: none;
+}
+
+.video-poster-box {
+    margin-top: 35px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--border-green);
+    box-shadow: 0 10px 40px rgba(0, 245, 155, 0.15);
+}
+
+.video-poster-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.video-poster-box:hover img {
+    transform: scale(1.02);
+}
+
+.poster-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    background: linear-gradient(0deg, rgba(6, 9, 12, 0.95) 0%, rgba(6, 9, 12, 0) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.poster-info h4 {
+    font-size: 1.25rem;
+    color: var(--text-white);
+    margin-bottom: 4px;
+}
+
+.poster-info p {
+    color: var(--accent-green);
+    font-size: 0.9rem;
+    font-family: monospace;
 }
 
 /* Course Curriculum Section */
